@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <h1>Las comidas de mi tierra</h1>
+        <img class="introImage" src="../imagenes/banderacolombia.png" alt="Bandera de Colombia">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../secciones/restaurantes.html">Restaurantes</a></li>
+            <li><a href="../secciones/platos.html">Platos</a></li>
+            <li><a href="../secciones/chefs.html">Chefs</a></li>
+            <li><a href="../secciones/contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <form>
+        <label for="name">Ingrese su nombre</label>
+        <input type="text" name="name"/><br>
+        <label for="email">Ingrese su email</label>
+        <input type="text" placeholder="usuario@dominio.com" name="email"/><br>
+        <!-- área de texto -->
+        <label for="comentarios">Comentarios: <br>
+           <textarea></textarea>
+        </label> <br>
+        <!-- Menú desplegable -->
+        <p>Califique su experiencia en el sitio.</p>
+        <select name="calificaciones">
+            <option value="S">Excelente</option>
+            <option value="M">Puede mejorar</option>
+            <option value="L">No lo recomendaria</option>
+        </select>
+        <!-- Menú Radio -->
+        <p>Selecciones su comida favorita entre las siguientes opciones </p>
+        <section class="form-comida-favorita">
+            <p>Pizza</p>
+            <input type="radio" name="Color" value="Negro"/>
+            <p>Hamburguesa</p>
+            <input type="radio" name="Color" value="Blanco"/>
+            <p>Alitas picantes</p>
+            <input type="radio" name="Color" value="Rosa"/>
+        </section>
+        <!-- checkbox -->
+        <p>Acepto término y condiciones</p>
+        <input type="checkbox" name="Acepto"/> <br>
+        <!-- Botones -->
+        <input type="submit" value="Enviar Datos"/>
+        <input type="reset" value="Limpiar Datos"/>
+       </form>
+    <footer>
+        <p>Siguenos en todas las redes sociales como <em>@ComidasDeMiTierra</em></p>
+    </footer>
+</body>
+</html>
